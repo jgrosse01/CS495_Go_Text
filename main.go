@@ -27,6 +27,7 @@ func main() {
 	for true {
 		// read text from the console and replace the newline characters with empty space
 		text, _ := consoleReader.ReadString('\n')
+		text = strings.Replace(text, "\r", "", -1)
 		text = strings.Replace(text, "\n", "", -1)
 		fmt.Println()
 
