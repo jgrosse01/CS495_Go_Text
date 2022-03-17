@@ -1,5 +1,6 @@
 package main
 
+// necessary imports (go alphabetizes them which is really nifty!)
 import (
 	"bufio"
 	"fmt"
@@ -46,14 +47,19 @@ func main() {
 	}
 }
 
+// getQuote takes a slice of type string and returns a randomly selected string from that list
 func getQuote(quoteList []string) string {
+	// store size of the list
 	size := len(quoteList)
+	// if the list is empty, print an error regarding the slice content and exit the program
 	if size == 0 {
 		fmt.Println("[ERROR] Quote list was not properly loaded! This is an error of read_file. Exiting program.")
 		os.Exit(2)
 	}
+	// get a random number using the seed defined in main
 	var numSelection = rand.Intn(size - 1)
 
+	// return the randomly selected quote from the slice of strings passed in
 	return quoteList[numSelection]
 }
 
