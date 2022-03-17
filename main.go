@@ -41,7 +41,7 @@ func main() {
 		case "no", "n":
 			fmt.Println("We're sorry to see you leave! Bye bye!")
 			os.Exit(0)
-		// they say literally anything else
+		// they say literally anything else INCLUDING saying nothing
 		default:
 			fmt.Println("Please input 'Yes' or 'No'")
 		}
