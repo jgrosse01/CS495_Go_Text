@@ -11,10 +11,6 @@ To install Go, visit this link and follow the instructions which correspond to y
 
 (newer versions of Go are not guaranteed to work to run this project. If the latest version of Go does not work, you will need to find a way to install one of the two tested versions mentioned).
 
-If you are on Windows, you will also need a bash terminal application. The program I suggest is "gitbash" and it can be found here: https://git-scm.com/downloads
-
-When installing gitbash, ensure to check the "Git Bash Here" option under "Windows Explorer integration" in the "Select Components" screen.
-
 Once you have successfully installed a Go version capable of running this program, run the program by simply cloning the repository, opening a bash terminal window, navigating to the root directory of the cloned project, and typing the command "go run main.go" without the quotes included.
 
 If there are errors, ensure that the "main.go" can be executed by your permission group. If it still produces errors, elevate the permissions of your command prompt for windows users and elevate the permission of your command for Mac/Linux users.
